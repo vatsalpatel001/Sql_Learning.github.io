@@ -10,12 +10,16 @@
 <lable class="Title deleat count" vat-id="1">ID : 1 &amp; Title : MySQL limit range</lable><textarea class="txt deleat" vat-id="1">SELECT * FROM mydb LIMIT 10,10
 -- The two arguments 10,10 are (Offset, Limit) so this will retrieve rows 11-20.</textarea><lable class="Title deleat count" vat-id="2">ID : 2 &amp; Title : comments in MySQL?</lable><textarea class="txt deleat" vat-id="2"># Comment
 -- Comment
-/* Comment */</textarea></div><br>
+/* Comment */</textarea><lable class="Title deleat count" vat-id="3">ID : 3 &amp; Title : Add Foreign Key Constraint</lable><textarea class="txt deleat" vat-id="3">ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+
+
+The command you provided is an SQL statement used to alter a table named "Orders" by adding a foreign key constraint. It specifies that the "PersonID" column in the "Orders" table should reference the "PersonID" column in the "Persons" table.</textarea></div><br>
 	<br>
 	<textarea class="sub subover" id="code0" placeholder="ID"></textarea> 
 	<textarea class="sub subover" id="code1" placeholder="Title"></textarea> <br>
 	<textarea class="sub subover" id="code2" placeholder="code"></textarea><br>
 	<a href="javascript:runner()" id="btn">Submit</a> <a href="javascript:deleat()" id="btn">Delete</a> <a href="javascript:down()" id="btn">Download</a> 
-	<textarea class="sub subover subover1" id="code3">Number of ID : 2</textarea> 
+	<textarea class="sub subover subover1" id="code3">Number of ID : 3</textarea> 
 	<br>
 	<script type="text/javascript" src="main.js"></script></body>
